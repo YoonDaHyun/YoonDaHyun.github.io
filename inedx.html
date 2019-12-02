@@ -1,0 +1,237 @@
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      #gallery{
+        width : 550px;
+        height : 190px;
+        background:#DF615D;
+        border:2px solid black;
+        border-radius:15px;
+      }
+      ul{list-style:none;}
+      ul li{
+        display:inline;
+      float:left;
+    padding:10px;
+  }
+  .bigPic{
+    position:absolute;
+    display:none;
+    left:100px;
+    width:400px;
+    height:340px;
+  }
+  .smallpic{
+    border: 2px dotted pink;
+    width:200px;
+    height:140px;
+  }
+      </style>
+
+      <script src="http://code.jquery.com/jquery-3.3.1.js">
+        </script>
+
+      <script>
+        $(document).ready(function(){
+          $("#s1").click(function(){
+            $("#big1").fadeIn(1000);
+          });
+          $("#big1").click(function(){
+            $("#big1").fadeOut(1000);
+          });
+          $("#s4").click(function(){
+            $("#big4").fadeIn(1000);
+          });
+          $("#big4").click(function(){
+            $("#big4").fadeOut(1000);
+          });
+        });
+        </script>
+
+  </head>
+  <body>
+    <h1>사용법</h1>
+    <ol>
+      <li> 작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+      <li> 큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+        </ol>
+        <div id="gallery">
+          <ul>
+            <li>
+              <img src="toystory.PNG" id="s1" class="smallpic">
+              <img src="toystory.PNG" id="big1" class="bigPic">
+            </li>
+            <li>
+              <img src="toystory.PNG" id="s4" class="smallpic" value="2">
+              <img src="toystory.PNG" id="big4" class="bigPic">
+            </li>
+          </ul>
+        </div>
+
+  </body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+.slide{
+  width:210px;
+  border:2px solid #333;
+  box-shadow:2px 2px 3px #000;
+  float:left;
+  margin-top:30px;
+  margin-right:20px;
+}
+  </style>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+
+  <script>
+    $(document).ready(function(){
+      $("#sup").click(function(){
+        $(".slide").slideDown(3000);
+      });
+      $("sdown").click(function(){
+        $(".slide").slideDown(3000);
+      });
+      $("#stoggle").click(function(){
+        $(".slide").slideToggle(3000);
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="button" id="sup" value="slideUp">
+      <input type="button" id="sdown" value="slideDown">
+      <input type="button" id="stoggle" value="slidToggle">
+    </from>
+    <div class="slide">
+      <img src="toystory.PNG" width=200 height=140>
+    </div>
+    <div class="slide">
+      <img src="cat1.PNG" width=200 height=140>
+    </div>
+    <div class="slide">
+      <p width=200 height=140>
+        겨울입니다. 눈이 옵니다. 년말년시 잘 보내시길
+        <p>
+    </div>
+  </body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    input{
+      background:yellow;
+      width:150px;
+      height:30px;
+      border:1px solid red;
+    }
+    img{
+      border:2px solid black;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+      </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          $("img").animate({width:"600px"},1000);
+          $("img").animate({height:"398px"},1000);
+          $("img").animate({borderRadius:"50px"},1000);
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <img src="toystory.png" width="300" height="200">
+    <br><b>토이스토리에요</b><br>
+    <input id="btn" value="확대하기">
+  </body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    div{
+      width:50px;
+      height:50px;
+      background-color: orange;
+      position: relative;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#snow").animate({marginLeft:"+=300px"},"slow");
+          $("#snow").animate({marginLeft:"-=300px"},"slow");
+        });
+        $("#btn2").click(function(){
+          $("#snow").animate({height:"toggle"},"slow");
+        });
+      });
+      </script>
+
+  </head>
+  <body>
+    <img src="toystory.png" id="snow" width"400" height="265"><br>
+    <b>한국의 겨울</b>눈이 와요~:)<br>
+    <button id="btn1">좌우 이동</button>
+    <button id="btn2">이미지 토글</button>
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+  div{
+    width:50px;
+    height:50px;
+    background:green;
+  }
+</style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("div").click(function(){
+          $(this).animate({left:'+=60'},1000);
+          $(this).animate({width:'+=60'},1000);
+          $(this).animate({height:'+=60'},1000);
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+    h1{
+      color:#9C77A6;
+    }
+
+      #gallery{
+        width : 550px;
+        height : 380px;
+        background:#9C77A6;
+        border:2px solid black;
+        border-radius:15px;
+      }
+      ul{list-style:none;}
+      ul li{
+        display:inline;
+      float:left;
+    padding:10px;
+  }
+  .bigPic{
+    position:absolute;
+    display:none;
+    left:100px;
+    width:400px;
+    height:340px;
+  }
+  .smallpic{
+    border: 2px dotted pink;
+    width:200px;
+    height:150px;
+  }
+      </style>
+
+      <script src="http://code.jquery.com/jquery-3.3.1.js">
+        </script>
+
+      <script>
+        $(document).ready(function(){
+          $("#s1").click(function(){
+            $("#big1").fadeIn(1000);
+          });
+          $("#big1").click(function(){
+            $("#big1").fadeOut(1000);
+          });
+          $("#s2").click(function(){
+            $("#big2").fadeIn(1000);
+          });
+          $("#big2").click(function(){
+            $("#big2").fadeOut(1000);
+          });
+          $("#s3").click(function(){
+            $("#big3").fadeIn(1000);
+          });
+          $("#big3").click(function(){
+            $("#big3").fadeOut(1000);
+          });
+          $("#s4").click(function(){
+            $("#big4").fadeIn(1000);
+          });
+          $("#big4").click(function(){
+            $("#big4").fadeOut(1000);
+          });
+        });
+        </script>
+
+  </head>
+  <body>
+    <h1>좋아하는 것</h1><hr>
+    <ol>
+      <h3><li>넷플릭스</li>
+      <h3><li>사진찍기</li>
+      <h3><li>노래듣기</li>
+      <h3><li>친구 만나기</li>
+        </ol>
+        <div id="gallery">
+          <ul>
+            <li>
+              <img src="img/net.PNG" id="s1" class="smallpic">
+              <img src="img/net.png" id="big1" class="bigPic">
+            </li>
+            <li>
+              <img src="img/picture.jpg" id="s2" class="smallpic" value="2">
+              <img src="img/picture.jpg" id="big2" class="bigPic">
+            </li><br>
+            <li>
+              <img src="img/melon.png" id="s3" class="smallpic" value="2">
+              <img src="img/melon.png" id="big3" class="bigPic">
+            </li>
+            <li>
+              <img src="img/meet.jpg" id="s4" height="60" class="smallpic" value="2">
+              <img src="img/meet.jpg" id="big4" class="bigPic">
+            </li>
+          </ul>
+        </div>
+
+  </body>
+</html>

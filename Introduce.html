@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{
+      font-size: 18px;
+    }
+    h3 {
+      color:#9C77A6;
+      font-style: italic;
+    }
+    h1{
+      color: #9C77A6;
+    }
+      #star{
+        float:left;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#button").click(function(){
+          $("#star").slideToggle(3000);
+        });
+      });
+      </script>
+
+  </head>
+  <body>
+    <h1>YoonDahyun</h1>
+    <hr>
+    <div>저의 가족은 <h3>6명</h3>입니다.</div><br>
+      <div>아빠, 엄마, 큰오빠, 작은오빠, 고양이 별이까지 6명입니다.</div></div><br>
+      <div>별이를 소개해요!</div><hr><br>
+
+      <input type="button" value="Toggle" id="button"><br>
+
+      <img src="img/star.jpg" width="180" id="star">
+      이름: 윤별★<br>
+      나이: 6살(곧 7살)<br>
+      성별: 여<br>
+      키: 40CM<br>
+      몸무게: 3.5kg<br>
+      좋아하는 음식: 츄르<br>
+      좋아하는 장난감: 주인의 이어폰<br><br><br><br><hr>
+
+  </body>
+</html>

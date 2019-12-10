@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+ #text{
+  color:#9C77A6;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100px;
+
+ }
+ img{
+   border-radius: 90px;
+   border-color: #9C77A6;
+   border-style: dotted;
+
+  }
+  #day{
+      color:#9C77A6;
+      font-size: 20px;
+  }
+</style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#b0").click(function(){
+          $(this).animate({left:'+=60'},1000);
+          $(this).animate({width:'+=60'},1000);
+          $(this).animate({height:'+=60'},1000);
+        });
+        $("#b1").click(function(){
+          $(this).animate({left:'+=60'},1000);
+          $(this).animate({width:'+=60'},1000);
+          $(this).animate({height:'+=60'},1000);
+        });
+        $("#b2").click(function(){
+          $(this).animate({left:'+=60'},1000);
+          $(this).animate({width:'+=60'},1000);
+          $(this).animate({height:'+=60'},1000);
+        });
+        $("#b3").click(function(){
+          $(this).animate({left:'+=60'},1000);
+          $(this).animate({width:'+=60'},1000);
+          $(this).animate({height:'+=60'},1000);
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <div id="text">12월 8일 즐거운 나의 생일 :)</div><hr><br>
+    <div id="p">
+      <img id="b0" src="img/birth00.jpg" width="200" height="200">
+      <img id="b1" src="img/birth01.jpg" width="240" height="260"><br>
+      <img id="b2" src="img/birth02.jpg" width="200" height="200">
+      <img id="b3" src="img/birth03.jpg" width="240" height="200"><br>
+      <div id="day">▶ 좋은 사람들과 좋은 날</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #home{
+        color:#9C77A6;
+        font-size:20px;
+      }
+      a{
+        color:#9C77A6;
+        font-size:25px;
+        font-
+      }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#snow").animate({marginLeft:"+=300px"},"slow");
+          $("#snow").animate({marginLeft:"-=300px"},"slow");
+        });
+        $("#btn2").click(function(){
+          $("#snow").animate({height:"toggle"},"slow");
+        });
+      });
+      </script>
+
+  </head>
+  <body>
+    <a>
+    홈페이지에 방문해주셔서 감사합니다<b>:)</b><br>
+    이 홈페이지는 <b>윤다현</b>을 <b>소개</b>하는 홈페이지입니다!</a>
+    <img src="img/pear1208.png" id="snow" width"600" height="465"><br>
+    <div id="home"><b>YoonDahyun</b>의 홈페이지에 오신것을 환영합니다:)<br</div>
+    <br><button id="btn1">배 좌우 이동</button>
+    <button id="btn2">배 토글</button>
+  </body>
+</html>
